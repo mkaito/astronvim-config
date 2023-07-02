@@ -18,6 +18,7 @@ return {
       end,
       desc = "Pick to close",
     },
+    ["<leader><BS>"] = { "<cmd>bdelete!<cr>", desc = "Close current buffer" },
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
@@ -26,10 +27,10 @@ return {
       function() require("telescope.builtin").resume() end,
       desc = "Resume last Telescope search",
     },
-    ["<TAB>"] = { ":bprevious<cr>", desc = "Previous buffer" },
-    ["<S-TAB>"] = { ":bnext<cr>", desc = "Next buffer" },
-    ["<leader>gx"] = { ":GitConflictListQf<CR>", desc = "Git conflicts" },
-    ["<CR>"] = { ":NeoZoomToggle<CR>", desc = "Zoom in/out", nowait = true },
+    ["<TAB>"] = { "<cmd>bprevious<cr>", desc = "Previous buffer" },
+    ["<S-TAB>"] = { "<cmd>bnext<cr>", desc = "Next buffer" },
+    ["<leader>gx"] = { "<cmd>GitConflictListQf<CR>", desc = "Git conflicts" },
+    ["<CR>"] = { "<cmd>NeoZoomToggle<CR>", desc = "Zoom in/out", nowait = true },
   },
   v = {
     [";"] = { ":", desc = "Command mode" },
