@@ -55,6 +55,10 @@ return {
     opts = {},
   },
   {
+    "mihyaeru21/nvim-lspconfig-bundler",
+    dependencies = { "neovim/nvim-lspconfig" },
+  },
+  {
     "catppuccin/nvim",
     name = "catppuccin",
     priority = 1000,

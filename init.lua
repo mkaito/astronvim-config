@@ -50,6 +50,14 @@ return {
     },
     -- enable servers that you already have installed without mason
     servers = {},
+    setup_handlers = {
+      tflint = function(_)
+        local lspconfig = require "lspconfig"
+        return {
+          root_dir = lspconfig.util.root_pattern(".terraform.lock.hcl", ".tflint.hcl", ".git"),
+        }
+      end,
+    },
     config = {
       -- pyright = {
       --   settings = {

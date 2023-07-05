@@ -32,16 +32,8 @@ return {
       b.diagnostics.deadnix,
 
       -- Ruby
-      b.diagnostics.rubocop.with {
-        condition = function(utils) return utils.root_has_file { "Gemfile" } end,
-        command = "bundle",
-        args = vim.list_extend({ "exec", "rubocop" }, b.diagnostics.rubocop._opts.args),
-      },
-      b.formatting.rubocop.with {
-        condition = function(utils) return utils.root_has_file { "Gemfile" } end,
-        command = "bundle",
-        args = vim.list_extend({ "exec", "rubocop" }, b.formatting.rubocop._opts.args),
-      },
+      b.diagnostics.rubocop,
+      b.formatting.rubocop,
 
       -- Shell
       b.diagnostics.shellcheck,
@@ -49,6 +41,9 @@ return {
 
       -- Markdown
       b.diagnostics.markdownlint,
+
+      -- GitHub Actions
+      b.diagnostics.actionlint,
     }
     return config -- return final config table
   end,
