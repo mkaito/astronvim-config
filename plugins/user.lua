@@ -53,4 +53,8 @@ return {
     version = "*",
     opts = {},
   },
+  {
+    "mihyaeru21/nvim-lspconfig-bundler",
+    dependencies = { "neovim/nvim-lspconfig" },
+  },
 }
