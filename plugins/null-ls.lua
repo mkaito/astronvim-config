@@ -16,12 +16,12 @@ return {
       b.formatting.prettierd,
 
       -- Python
-      b.formatting.isort.with {
-        prefer_local = ".venv/bin",
-        extra_args = { "--profile", "black" },
-      },
+      -- b.formatting.isort.with {
+      --   prefer_local = ".venv/bin",
+      --   extra_args = { "--profile", "black" },
+      -- },
       b.formatting.black.with { prefer_local = ".venv/bin" },
-      b.diagnostics.flake8.with { prefer_local = ".venv/bin" },
+      -- b.diagnostics.flake8.with { prefer_local = ".venv/bin" },
       -- b.diagnostics.mypy.with { prefer_local = ".venv/bin" },
       -- b.diagnostics.ruff.with { prefer_local = ".venv/bin" },
       -- b.formatting.ruff.with { prefer_local = ".venv/bin" },

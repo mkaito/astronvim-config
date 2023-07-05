@@ -1,19 +1,18 @@
 return {
   "gpanders/editorconfig.nvim",
+  "gbprod/nord.nvim",
   {
     "utilyre/barbecue.nvim",
-    event = "VeryLazy",
     name = "barbecue",
+    version = "*",
+    event = "VeryLazy",
     dependencies = {
       "SmiteshP/nvim-navic",
       "nvim-tree/nvim-web-devicons",
     },
     opts = {
-      theme = "catppuccin-macchiato",
+      -- fun stuff goes here
     },
-  },
-  {
-    "gbprod/nord.nvim",
   },
   {
     "kylechui/nvim-surround",

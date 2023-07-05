@@ -5,7 +5,18 @@ return {
     "williamboman/mason-lspconfig.nvim",
     -- overrides `require("mason-lspconfig").setup(...)`
     opts = {
-      ensure_installed = { "lua_ls", "pyright", "bashls" },
+      ensure_installed = {
+        -- Lua
+        "lua_ls",
+
+        -- Shell
+        "bashls",
+
+        -- Python
+        -- "jedi_language_server",
+        "pylsp",
+        "ruff_lsp",
+      },
     },
   },
   -- use mason-null-ls to configure Formatters/Linter installation for null-ls sources
@@ -13,7 +24,31 @@ return {
     "jay-babu/mason-null-ls.nvim",
     -- overrides `require("mason-null-ls").setup(...)`
     opts = {
-      ensure_installed = { "prettierd", "stylua", "black", "isort", "shellcheck", "shfmt" },
+      ensure_installed = {
+        -- Prettier
+        "prettierd",
+
+        -- Lua
+        "stylua",
+
+        -- Python
+        "black",
+        -- "isort",
+        "mypy",
+        -- "flake8",
+
+        -- Shell
+        "shellcheck",
+        "shfmt",
+
+        -- Nix
+        "statix",
+        "alejandra",
+        "deadnix",
+
+        -- Markdown
+        "markdownlint",
+      },
     },
   },
   {
