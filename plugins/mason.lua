@@ -13,7 +13,6 @@ return {
         "bashls",
 
         -- Python
-        -- "jedi_language_server",
         "pylsp",
         "ruff_lsp",
       },
