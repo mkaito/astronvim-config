@@ -27,7 +27,7 @@ return {
 
     ["<leader>gx"] = { "<cmd>GitConflictListQf<CR>", desc = "Git conflicts" },
 
-    ["<CR>"] = { "<cmd>NeoZoomToggle<CR>", desc = "Zoom in/out", nowait = true },
+    -- ["<CR>"] = { "<cmd>NeoZoomToggle<CR>", desc = "Zoom in/out", nowait = true },
   },
   v = {
     [";"] = { ":", desc = "Command mode" },
