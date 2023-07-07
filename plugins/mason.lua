@@ -32,9 +32,7 @@ return {
 
         -- Python
         "black",
-        -- "isort",
         "mypy",
-        -- "flake8",
 
         -- Shell
         "shellcheck",
@@ -47,6 +45,9 @@ return {
 
         -- Markdown
         "markdownlint",
+
+        -- GH Actions
+        "actionlint",
       },
     },
   },

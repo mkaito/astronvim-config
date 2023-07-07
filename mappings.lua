@@ -15,6 +15,7 @@ return {
     ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
     ["<leader><leader>"] = { "<cmd>Telescope buffers<cr>", desc = "Buffer list" },
     ["<leader><BS>"] = { "<cmd>bdelete<cr>", desc = "Close current buffer" },
+    ["<leader><TAB>"] = { "<cmd>b #<cr>", desc = "Edit alternate file" },
 
     -- Resume last Telescope session
     ["<leader>f<space>"] = {
@@ -22,12 +23,13 @@ return {
       desc = "Resume last Telescope search",
     },
 
-    ["<TAB>"] = { "<cmd>bnext<cr>", desc = "Next buffer" },
-    ["<S-TAB>"] = { "<cmd>bprevious<cr>", desc = "Previous buffer" },
+    -- ["<TAB>"] = { "<cmd>bnext<cr>", desc = "Next buffer" },
+    -- ["<S-TAB>"] = { "<cmd>bprevious<cr>", desc = "Previous buffer" },
 
     ["<leader>gx"] = { "<cmd>GitConflictListQf<CR>", desc = "Git conflicts" },
 
-    -- ["<CR>"] = { "<cmd>NeoZoomToggle<CR>", desc = "Zoom in/out", nowait = true },
+    -- Easily conflicts with other plugins
+    ["<leader>uz"] = { "<cmd>NeoZoomToggle<CR>", desc = "Zoom in/out", nowait = true },
   },
   v = {
     [";"] = { ":", desc = "Command mode" },

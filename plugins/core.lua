@@ -75,15 +75,4 @@ return {
   --     }, { mode = "n", prefix = "<leader>" })
   --   end,
   -- },
-  {
-    "nvim-telescope/telescope.nvim",
-    opts = function(_, opts)
-      opts.defaults.layout_strategy = "vertical"
-      opts.defaults.layout_config = {
-        height = 0.8,
-        width = 0.8,
-      }
-      return opts
-    end,
-  },
 }
