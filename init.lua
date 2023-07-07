@@ -33,15 +33,14 @@ return {
           -- "go",
         },
         ignore_filetypes = { -- disable format on save for specified filetypes
-          -- "python",
           "sh",
           "bash",
           "zsh",
         },
       },
       disabled = { -- disable formatting capabilities for the listed language servers
-        -- "sumneko_lua",
         "denols",
+        "pylsp",
       },
       timeout_ms = 1000, -- default format timeout
       -- filter = function(client) -- fully override the default formatting function
@@ -52,24 +51,24 @@ return {
     servers = {},
     setup_handlers = {
       tflint = function(_)
-        local lspconfig = require "lspconfig"
+        local util = require "lspconfig.util"
         return {
-          root_dir = lspconfig.util.root_pattern(".terraform.lock.hcl", ".tflint.hcl", ".git"),
+          root_dir = util.root_pattern(".terraform.lock.hcl", ".tflint.hcl", ".git"),
         }
       end,
     },
     config = {
-      -- pyright = {
-      --   settings = {
-      --     pyright = { autoImportCompletion = true },
-      --     python = {
-      --       analysis = {
-      --         typeCheckingMode = "off",
-      --         diagnosticMode = "workspace",
-      --       },
-      --     },
-      --   },
-      -- },
+      pyright = {
+        settings = {
+          pyright = { autoImportCompletion = true },
+          python = {
+            analysis = {
+              typeCheckingMode = "off",
+              diagnosticMode = "workspace",
+            },
+          },
+        },
+      },
       pylsp = {
         settings = {
           pylsp = {

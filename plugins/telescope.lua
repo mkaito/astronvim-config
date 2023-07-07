@@ -3,11 +3,16 @@ return {
   opts = function(_, opts)
     local actions = require "telescope.actions"
 
-    opts.defaults = vim.tbl_deep_extend("force", opts.defaults, {
+    opts.defaults = vim.tbl_deep_extend("force", opts.defaults or {}, {
       layout_strategy = "vertical",
       layout_config = {
         height = 0.85,
         width = 0.9,
+      },
+      mappings = {
+        i = {
+          ["<C-Space>"] = actions.to_fuzzy_refine,
+        },
       },
     })
 
@@ -15,7 +20,7 @@ return {
       buffers = {
         mappings = {
           i = {
-            ["<c-d>"] = actions.delete_buffer,
+            ["<C-d>"] = actions.delete_buffer,
           },
         },
       },
