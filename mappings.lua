@@ -17,6 +17,9 @@ return {
     ["<leader><BS>"] = { "<cmd>bdelete<cr>", desc = "Close current buffer" },
     ["<leader><TAB>"] = { "<cmd>b #<cr>", desc = "Edit alternate file" },
 
+    -- The default binding hides hidden files, but I want to see them
+    ["<leader>ff"] = { function() require("telescope.builtin").find_files { hidden = true } end, desc = "Find files" },
+
     -- Resume last Telescope session
     ["<leader>f<space>"] = {
       function() require("telescope.builtin").resume() end,
