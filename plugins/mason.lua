@@ -14,7 +14,7 @@ return {
 
         -- Python
         "pylsp",
-        "ruff_lsp",
+        -- "ruff_lsp",
       },
     },
   },
@@ -33,6 +33,9 @@ return {
         -- Python
         "black",
         "mypy",
+        "isort",
+        -- "flake8",
+        "ruff",
 
         -- Shell
         "shellcheck",
