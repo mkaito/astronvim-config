@@ -10,9 +10,6 @@ return {
       "SmiteshP/nvim-navic",
       "nvim-tree/nvim-web-devicons",
     },
-    -- opts = {
-    --   -- fun stuff goes here
-    -- },
   },
   {
     "kylechui/nvim-surround",
