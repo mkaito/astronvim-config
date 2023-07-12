@@ -33,7 +33,7 @@ return {
         -- Python
         "black",
         "mypy",
-        "isort",
+        -- "isort",
         -- "flake8",
         "ruff",
 

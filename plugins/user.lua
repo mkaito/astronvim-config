@@ -2,6 +2,26 @@ return {
   "gpanders/editorconfig.nvim",
   "gbprod/nord.nvim",
   {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    priority = 1000,
+    opts = {
+      integrations = {
+        nvimtree = false,
+        ts_rainbow = false,
+        aerial = true,
+        dap = { enabled = true, enable_ui = true },
+        mason = true,
+        neotree = true,
+        notify = true,
+        semantic_tokens = true,
+        symbols_outline = true,
+        telescope = true,
+        which_key = true,
+      },
+    },
+  },
+  {
     "utilyre/barbecue.nvim",
     name = "barbecue",
     version = "*",
@@ -10,9 +30,9 @@ return {
       "SmiteshP/nvim-navic",
       "nvim-tree/nvim-web-devicons",
     },
-    opts = {
-      -- fun stuff goes here
-    },
+    -- opts = {
+    --   -- fun stuff goes here
+    -- },
   },
   {
     "kylechui/nvim-surround",
@@ -57,25 +77,5 @@ return {
   {
     "mihyaeru21/nvim-lspconfig-bundler",
     dependencies = { "neovim/nvim-lspconfig" },
-  },
-  {
-    "catppuccin/nvim",
-    name = "catppuccin",
-    priority = 1000,
-    opts = {
-      integrations = {
-        nvimtree = false,
-        ts_rainbow = false,
-        aerial = true,
-        dap = { enabled = true, enable_ui = true },
-        mason = true,
-        neotree = true,
-        notify = true,
-        semantic_tokens = true,
-        symbols_outline = true,
-        telescope = true,
-        which_key = true,
-      },
-    },
   },
 }
