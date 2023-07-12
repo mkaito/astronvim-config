@@ -14,7 +14,6 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
     ["<leader><leader>"] = { "<cmd>Telescope buffers<cr>", desc = "Buffer list" },
-    ["<leader><BS>"] = { "<cmd>bdelete<cr>", desc = "Close current buffer" },
     ["<leader><TAB>"] = { "<cmd>b #<cr>", desc = "Edit alternate file" },
 
     -- The default binding hides hidden files, but I want to see them
@@ -25,9 +24,6 @@ return {
       function() require("telescope.builtin").resume() end,
       desc = "Resume last Telescope search",
     },
-
-    -- ["<TAB>"] = { "<cmd>bnext<cr>", desc = "Next buffer" },
-    -- ["<S-TAB>"] = { "<cmd>bprevious<cr>", desc = "Previous buffer" },
 
     ["<leader>gx"] = { "<cmd>GitConflictListQf<CR>", desc = "Git conflicts" },
 
