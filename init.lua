@@ -40,9 +40,9 @@ return {
       },
       disabled = { -- disable formatting capabilities for the listed language servers
         "denols",
-        "pylsp",
-        "solargraph",
-        "ruby_ls",
+        -- "pylsp",
+        -- "solargraph",
+        -- "ruby_ls",
       },
       timeout_ms = 1000, -- default format timeout
       -- filter = function(client) -- fully override the default formatting function
@@ -52,8 +52,8 @@ return {
     -- enable servers that you already have installed without mason
     servers = {
       -- "ruby_ls",
-      "rubocop",
-      "solargraph",
+      -- "rubocop",
+      -- "solargraph",
     },
     setup_handlers = {
       tflint = function(_)
@@ -69,29 +69,29 @@ return {
           pyright = { autoImportCompletion = true },
           python = {
             analysis = {
-              typeCheckingMode = "off",
+              typeCheckingMode = "strict",
               diagnosticMode = "workspace",
             },
           },
         },
       },
-      pylsp = {
-        settings = {
-          pylsp = {
-            plugins = {
-              flake8 = { enabled = false },
-              mypy = { enabled = true },
-              pycodestyle = { enabled = false },
-              pydocstyle = { enabled = false },
-              pylint = { enabled = false },
-              pyflakes = { enabled = false },
-              rope_autoimport = { enabled = true },
-              rope_completion = { enabled = true },
-              yapf = { enabled = false },
-            },
-          },
-        },
-      },
+      -- pylsp = {
+      --   settings = {
+      --     pylsp = {
+      --       plugins = {
+      --         flake8 = { enabled = false },
+      --         mypy = { enabled = true },
+      --         pycodestyle = { enabled = false },
+      --         pydocstyle = { enabled = false },
+      --         pylint = { enabled = false },
+      --         pyflakes = { enabled = false },
+      --         rope_autoimport = { enabled = true },
+      --         rope_completion = { enabled = true },
+      --         yapf = { enabled = false },
+      --       },
+      --     },
+      --   },
+      -- },
     },
   },
   -- Configure require("lazy").setup() options
