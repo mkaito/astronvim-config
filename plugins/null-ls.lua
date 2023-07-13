@@ -23,9 +23,10 @@ return {
       -- b.diagnostics.flake8.with { prefer_local = ".venv/bin" },
       b.formatting.black.with { prefer_local = ".venv/bin" },
       -- Ruff supersedes isort and flake8
-      b.diagnostics.ruff.with { prefer_local = ".venv/bin" },
+      -- Ruff diagnostics are covered by ruff-lsp
+      -- b.diagnostics.ruff.with { prefer_local = ".venv/bin" },
       b.formatting.ruff.with { prefer_local = ".venv/bin" },
-      -- b.diagnostics.mypy,
+      b.diagnostics.mypy,
 
       -- Nix
       b.formatting.alejandra,

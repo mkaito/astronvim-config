@@ -36,6 +36,10 @@ return {
 
         -- GH Actions
         "actionlint",
+
+        -- Python
+        "mypy",
+        "ruff",
       })
     end,
   },

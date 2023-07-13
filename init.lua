@@ -69,7 +69,7 @@ return {
           pyright = { autoImportCompletion = true },
           python = {
             analysis = {
-              typeCheckingMode = "strict",
+              typeCheckingMode = "off",
               diagnosticMode = "workspace",
             },
           },
