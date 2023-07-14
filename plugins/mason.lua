@@ -13,6 +13,10 @@ return {
 
         -- Shell
         "bashls",
+
+        -- Ruby
+        "solargraph",
+        "rubocop",
       })
     end,
   },
@@ -41,6 +45,11 @@ return {
         "mypy",
         "ruff",
       })
+
+      opts.handlers = {
+        -- disable automatic setup
+        function() end,
+      }
     end,
   },
   {

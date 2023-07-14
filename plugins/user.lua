@@ -1,6 +1,5 @@
 return {
   "gpanders/editorconfig.nvim",
-  "gbprod/nord.nvim",
   {
     "utilyre/barbecue.nvim",
     name = "barbecue",
@@ -54,5 +53,13 @@ return {
   {
     "mihyaeru21/nvim-lspconfig-bundler",
     dependencies = { "neovim/nvim-lspconfig" },
+  },
+  {
+    "mfussenegger/nvim-dap",
+    dependencies = {
+      "suketa/nvim-dap-ruby",
+      name = "dap-ruby",
+      opts = {},
+    },
   },
 }

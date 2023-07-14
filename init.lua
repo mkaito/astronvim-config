@@ -16,13 +16,16 @@ return {
       --   ["remote3"] = "github_user", -- GitHub user assume AstroNvim fork
     },
   },
+
   -- Set colorscheme to use
   colorscheme = "catppuccin-mocha",
+
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
     virtual_text = true,
     underline = true,
   },
+
   lsp = {
     -- customize lsp formatting options
     formatting = {
@@ -41,8 +44,7 @@ return {
       disabled = { -- disable formatting capabilities for the listed language servers
         "denols",
         -- "pylsp",
-        -- "solargraph",
-        -- "ruby_ls",
+        "solargraph",
       },
       timeout_ms = 1000, -- default format timeout
       -- filter = function(client) -- fully override the default formatting function
