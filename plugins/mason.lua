@@ -13,10 +13,6 @@ return {
 
         -- Shell
         "bashls",
-
-        -- Ruby
-        "solargraph",
-        "rubocop",
       })
     end,
   },

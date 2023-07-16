@@ -43,8 +43,6 @@ return {
       },
       disabled = { -- disable formatting capabilities for the listed language servers
         "denols",
-        -- "pylsp",
-        "solargraph",
       },
       timeout_ms = 1000, -- default format timeout
       -- filter = function(client) -- fully override the default formatting function
@@ -53,9 +51,8 @@ return {
     },
     -- enable servers that you already have installed without mason
     servers = {
-      -- "ruby_ls",
-      -- "rubocop",
-      -- "solargraph",
+      -- Solargraph is better installed as part of your bundle
+      "solargraph",
     },
     setup_handlers = {
       tflint = function(_)
@@ -86,6 +83,9 @@ return {
             },
           },
         },
+      },
+      solargraph = {
+        cmd = { "bundle", "exec", "solargraph", "stdio" },
       },
       -- pylsp = {
       --   settings = {

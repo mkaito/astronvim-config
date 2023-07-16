@@ -9,6 +9,8 @@ return {
       "SmiteshP/nvim-navic",
       "nvim-tree/nvim-web-devicons",
     },
+    -- I don't know why this is necessary, but apparently it is.
+    opts = {},
   },
   {
     "kylechui/nvim-surround",
