@@ -5,7 +5,13 @@ return {
 
   -- Colors
   { import = "astrocommunity.colorscheme.catppuccin" },
+  { "catppuccin", name = "catpuccin", lazy = false },
+
   { import = "astrocommunity.colorscheme.nord-nvim" },
+  { "shaunsingh/nord.nvim", lazy = false },
+
+  { import = "astrocommunity.colorscheme.tokyonight-nvim" },
+  { "folke/tokyonight.nvim", lazy = false },
 
   -- Language packs
   { import = "astrocommunity.pack.rust" },
