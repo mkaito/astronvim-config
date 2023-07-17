@@ -96,6 +96,7 @@ return {
         },
       },
       solargraph = {
+        -- FIXME: Check if Gemfile.lock exists and solargraph is in it
         cmd = { "bundle", "exec", "solargraph", "stdio" },
       },
       -- pylsp = {
