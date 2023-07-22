@@ -41,16 +41,9 @@ return {
     },
   },
   {
-    "akinsho/git-conflict.nvim",
-    lazy = false,
+    "tpope/vim-fugitive",
+    cmd = "Git",
     version = "*",
-    opts = {},
-  },
-  {
-    "nyngwang/NeoZoom.lua",
-    lazy = false,
-    version = "*",
-    opts = {},
   },
   {
     "mihyaeru21/nvim-lspconfig-bundler",

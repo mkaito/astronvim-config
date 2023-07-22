@@ -24,11 +24,6 @@ return {
       function() require("telescope.builtin").resume() end,
       desc = "Resume last Telescope search",
     },
-
-    ["<leader>gx"] = { "<cmd>GitConflictListQf<CR>", desc = "Git conflicts" },
-
-    -- Easily conflicts with other plugins
-    ["<leader>uz"] = { "<cmd>NeoZoomToggle<CR>", desc = "Zoom in/out", nowait = true },
   },
   v = {
     [";"] = { ":", desc = "Command mode" },
