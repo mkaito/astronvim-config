@@ -53,6 +53,7 @@ return {
     servers = {
       -- Solargraph is better installed as part of your bundle
       "solargraph",
+      "sorbet",
     },
     setup_handlers = {
       tflint = function(_)
