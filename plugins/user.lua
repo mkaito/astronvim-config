@@ -3,7 +3,9 @@ return {
   {
     "utilyre/barbecue.nvim",
     name = "barbecue",
-    version = "*",
+    -- https://github.com/utilyre/barbecue.nvim/pull/93
+    -- version = "*",
+    branch = "mkaito/fix-default-icon",
     event = "VeryLazy",
     dependencies = {
       "SmiteshP/nvim-navic",
