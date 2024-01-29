@@ -7,7 +7,6 @@ return {
       "json",
       "lua",
       "markdown",
-      "python",
       "ruby",
       "yaml",
     })

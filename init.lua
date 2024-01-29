@@ -64,17 +64,6 @@ return {
       end,
     },
     config = {
-      pyright = {
-        settings = {
-          pyright = { autoImportCompletion = true },
-          python = {
-            analysis = {
-              typeCheckingMode = "off",
-              diagnosticMode = "workspace",
-            },
-          },
-        },
-      },
       rust_analyzer = {
         settings = {
           ["rust-analyzer"] = {
@@ -100,23 +89,6 @@ return {
         -- FIXME: Check if Gemfile.lock exists and solargraph is in it
         cmd = { "bundle", "exec", "solargraph", "stdio" },
       },
-      -- pylsp = {
-      --   settings = {
-      --     pylsp = {
-      --       plugins = {
-      --         flake8 = { enabled = false },
-      --         mypy = { enabled = true },
-      --         pycodestyle = { enabled = false },
-      --         pydocstyle = { enabled = false },
-      --         pylint = { enabled = false },
-      --         pyflakes = { enabled = false },
-      --         rope_autoimport = { enabled = true },
-      --         rope_completion = { enabled = true },
-      --         yapf = { enabled = false },
-      --       },
-      --     },
-      --   },
-      -- },
     },
   },
   -- Configure require("lazy").setup() options

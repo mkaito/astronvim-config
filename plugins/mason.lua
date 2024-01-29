@@ -36,10 +36,6 @@ return {
 
         -- GH Actions
         "actionlint",
-
-        -- Python
-        "mypy",
-        "ruff",
       })
 
       opts.handlers = {
