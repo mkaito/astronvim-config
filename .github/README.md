@@ -1,3 +1,5 @@
+Deprecated in favour of https://github.com/mkaito/neovim-config
+
 # AstroNvim User Configuration Example
 
 A user configuration template for [AstroNvim](https://github.com/AstroNvim/AstroNvim)
